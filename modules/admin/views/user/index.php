@@ -24,7 +24,17 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'email:email',
             'username',
-             'active',
+            [ 
+                'attribute' =>  'active',
+                'value' => function($model){
+                    if($model->active == 1)
+                    {
+                        return 'Active';
+                    } else {
+                        return 'Inactive';
+                    }
+                }
+            ],
             // 'password',
 
             [

@@ -21,7 +21,7 @@ use yii\widgets\ActiveForm;
 //     $form->field($model, 'code')->textInput(['maxlength' => true])
 //= $form->field($model, 'password')->passwordInput(['maxlength' => true]) 
     ?>
-    <?= $form->field($model, 'active')->textInput() ?>
+    <?=  $form->field($model, 'active')->dropdownList([0 => 'Inactive', 1 => 'Active']) ?>
 
 
     <div class="form-group">

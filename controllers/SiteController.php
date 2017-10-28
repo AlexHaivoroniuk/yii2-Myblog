@@ -180,6 +180,7 @@ class SiteController extends CustomController
                     $auth = Yii::$app->authManager;
                     $authorRole = $auth->getRole('user');
                     $auth->assign($authorRole, $model->id);
+                    
                     //Sending confirmation mail
                     $model->sendConfirmationLink();
                     Yii::$app->session->setFlash('success', " Link is sent to confirm your e-mail.");

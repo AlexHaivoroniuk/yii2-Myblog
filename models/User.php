@@ -23,7 +23,7 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const ACTIVE_USER = 1;
 //    public $password;
-    public $rememberMe = true;
+    public $rememberMe = false;
 
     private $_user = false;
 
@@ -94,12 +94,12 @@ class User extends ActiveRecord implements IdentityInterface
     // Ищим пользователя по id
     public static function findIdentity($id)
     {
-        return static ::findOne($id);
+        return static::findOne($id);
     }
 
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        /* return static::findOne(['access_token' => $token]);*/
+         return static::findOne(['access_token' => $token]);
     }
 
     // Ищим пользователя по E-mail и проверяем потверждён ли аккаунт

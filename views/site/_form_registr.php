@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     
         <div class="form-group">
-            <?= Html::submitButton('Зарегистрироватся', ['class' => 'btn btn-primary']) ?>
+            <?= Html::submitButton('Register', ['class' => 'btn btn-primary']) ?>
         </div>
     <?php ActiveForm::end(); ?>
 
