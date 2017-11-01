@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Post */

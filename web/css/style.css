@@ -159,7 +159,7 @@
 			{
 				font-family: 'Open Sans Condensed', sans-serif;
 				font-weight: 700;
-				color: black !important;
+				color: #383838 !important;
 				margin: 0 0 0.75em 0;
 			}
 		
@@ -635,8 +635,8 @@
 				.box.text-style1 .inner
 				{
 					position: relative;
-					background-color: #9e9ea8 !important;
-					background-color: rgba(0,0,0,0.15);
+					background-color: rgba(37, 37, 39, 0.55) !important;
+					/*background-color: rgba(0,0,0,0.15);*/
 					border-radius: 0.4em;
 					padding: 1.25em;
 					box-shadow: 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 0.25em 0 rgba(0,0,0,0.25);

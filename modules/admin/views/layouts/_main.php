@@ -19,7 +19,13 @@ AppAssetAdmin::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!---->
+    <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+<!---->
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -42,6 +48,7 @@ AppAssetAdmin::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
+
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -64,20 +71,21 @@ AppAssetAdmin::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
 
-        <div class="col-md-12">
-            <div class="col-md-4">
+        <div class="col-lg-12">
+            <div class="col-md-2">
                 <?php
                          echo PanelMenu::widget(['items' => [
                     ['label' => 'Categories', 'url' => ['/admin/category']],
                     ['label' => 'Posts', 'url' => ['/admin/post']],
                     ['label' => 'Users', 'url' => ['/admin/user']],
+                    ['label' => 'Books', 'url' => ['/admin/book']],
                             ],
                             'heading' => 'Menu',
                             'type' => 'panel-default',
                         ]);
                 ?>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-10">
 
                 <?php if( Yii::$app->session->hasFlash('success') ):?>
 
@@ -111,6 +119,7 @@ AppAssetAdmin::register($this);
 
 
                 <?= $content ?>
+                
             </div>
         </div>
 
@@ -125,6 +134,8 @@ AppAssetAdmin::register($this);
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
+
+
 
 <?php $this->endBody() ?>
 </body>

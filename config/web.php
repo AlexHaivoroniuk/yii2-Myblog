@@ -7,7 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'ru-RU', // Язык сайта
+//    'language' => 'ru-RU', // Язык сайта
     'charset' => 'utf-8', // Кодировка сайта
     'defaultRoute' => 'site/index', // адрес по умолчанию
 //    'aliases' => [
@@ -37,6 +37,10 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'rI61eULxTR1-hN7j0SYaBQU9hY93GVDc',
+        ],
+
+        'assetManager' => [
+          'linkAssets' => true
         ],
 
 

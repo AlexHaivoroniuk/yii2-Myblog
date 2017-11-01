@@ -1,6 +1,6 @@
 $(document).on("click", '.reg', function (e) {
     e.preventDefault();
-    $('.form').html('Загружаю...');
+    $('.form').html('Loading...');
     $.ajax({
         url: '/site/register',
         type: 'get',
@@ -10,7 +10,7 @@ $(document).on("click", '.reg', function (e) {
            // console.log('Всё хорошо!!!');
         },
         error: function (res) {
-            console.log('Всё плохо!!!');
+            console.log('Bad!!!');
         }
     });
 });

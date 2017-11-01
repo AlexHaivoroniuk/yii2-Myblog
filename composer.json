@@ -21,7 +21,9 @@
         "fxp/composer-asset-plugin": "^1.2.0",
         "timurmelnikov/yii2-panel-menu": "*",
         "costa-rico/yii2-images": "dev-master",
-        "mihaildev/yii2-ckeditor": "*"
+        "mihaildev/yii2-ckeditor": "*",
+        "yiisoft/yii2-jui": "^2.0",
+        "newerton/yii2-fancybox": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
